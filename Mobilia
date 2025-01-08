@@ -1,0 +1,58 @@
+package br.com.dobackaofront.mobilia;
+
+
+
+
+abstract class Mobilia {
+    public String cor;
+    public String material;
+
+  
+    public Mobilia(String cor, String material) {
+        this.cor = cor;
+        this.material = material;
+    }
+
+   
+    public abstract void montar();
+
+    
+    public void desmontar() {
+        System.out.println("Desmontando a mobília.");
+    }
+}
+
+
+class Sofa extends Mobilia {
+    public Sofa(String cor, String material) {
+        super(cor, material);
+    }
+
+    @Override
+    public void montar() {
+        System.out.println("Montando o sofá de cor " + cor + " feito de " + material + ".");
+    }
+}
+
+
+class Mesa extends Mobilia {
+    public Mesa(String cor, String material) {
+        super(cor, material);
+    }
+
+    @Override
+    public void montar() {
+        System.out.println("Montando a mesa de cor " + cor + " feita de " + material + ".");
+    }
+}
+
+public class FábricaDeMóveis {
+    public static void main(String[] args) {
+        Mobilia sofa = new Sofa("azul", "madeira");
+        Mobilia mesa = new Mesa("preta", "metal");
+
+        sofa.montar();  
+        mesa.montar();  
+        sofa.desmontar(); 
+    }
+}
