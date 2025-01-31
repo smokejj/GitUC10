@@ -1,0 +1,21 @@
+package claskonoha;
+
+
+public abstract class Konoha {
+    public String nomeDoCla;  
+    public String lider;       
+
+    // Construtor
+    public Konoha(String nomeDoCla, String lider) {
+        this.nomeDoCla = nomeDoCla;
+        this.lider = lider;
+    }
+
+    public abstract void habilidadeEspecial();
+
+    public void exibirDetalhes() {
+        System.out.println("Clã: " + nomeDoCla);
+        System.out.println("Líder: " + lider);
+    }
+    
+}
