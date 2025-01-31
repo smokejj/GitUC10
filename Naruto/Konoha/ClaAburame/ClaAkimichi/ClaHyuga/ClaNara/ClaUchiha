@@ -1,0 +1,13 @@
+package claskonoha;
+
+
+public abstract class ClaUchiha extends Konoha {
+    public ClaUchiha(String lider) {
+        super("Uchiha", lider);
+    }
+
+    @Override
+    public void habilidadeEspecial() {
+        System.out.println("Habilidade Especial: Sharingan.");
+    }
+}
