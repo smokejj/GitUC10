@@ -1,0 +1,16 @@
+package claskonoha;
+
+/**
+ *
+ * @author JEFERSONCARVALHODASI
+ */
+public abstract class ClaAburame extends Konoha{
+     public ClaAburame(String lider) {
+        super("Aburame", lider);
+    }
+
+    @Override
+    public void habilidadeEspecial() {
+        System.out.println("Habilidade Especial: Investigação.");
+    }
+}
