@@ -1,0 +1,13 @@
+package claskonoha;
+
+
+public abstract class ClaHyuga extends Konoha {
+    public ClaHyuga(String lider) {
+        super("Hyuga", lider);
+    }
+
+    @Override
+    public void habilidadeEspecial() {
+        System.out.println("Habilidade Especial: Hyuga.");
+    }
+}
