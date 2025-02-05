@@ -1,0 +1,20 @@
+package aula4;
+
+/**
+ *
+ * @author JEFERSONCARVALHODASI
+ */
+public class GuessValidator {
+    public boolean validateGuess(int guess, int numberGuess){
+        if(guess > numberGuess){
+            System.out.println("Seu palpite foi muito alto");
+            return false;
+        }else if (guess < numberGuess){
+            System.out.println("Seu palpite fou muito baixo");
+            return false;
+        }else{
+            return true;//Palpite correto
+        }
+    }
+    
+}
